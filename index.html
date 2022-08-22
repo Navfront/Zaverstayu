@@ -35,52 +35,57 @@
     </header>
     <main class="page__main">
       <section class="section promo">
-        <div class="promo__content container">
+        <div class="container container--small">
           <h1 class="visually-hidden">
             Студия дизайна SCANDY в Санкт-Петербурге. Мы профессионалы рынка с тысячелтним опытом. Подберем для Вас
             лучший дизайн проект!
           </h1>
-          <h2 class="promo__title section__heading">Поможем сделать вашу квартиру уютнее</h2>
-          <p>
-            Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины и помогаем организовать доставку
+          <h2 class="promo__title">Поможем сделать вашу квартиру уютнее</h2>
+          <p class="promo__text">
+            Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины <br />
+            и помогаем организовать доставку
           </p>
           <button type="button" class="button button--request">Оставить заявку</button>
         </div>
       </section>
       <section class="section about">
-        <div class="container">
-          <h2 class="section__heading float-left">О нас</h2>
-          <img
-            class="about__image float-left"
-            src="./images/content/photo-egg.jpg"
-            alt="Дизайнерски оформленный стол с золотыми приборами, раскошными бокалами, вазой из слоновой кости- формы яйца с цветами в центре"
-            width="444.54"
-            height="465"
-          />
-          <p class="about__text">
-            Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать
-            неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то, что
-            по-настоящему вдохновляет дизайнеров нашей студии.
-          </p>
-          <p class="about__text">
-            Наш коллектив сделает все, чтобы после сотрудничества с нами, Вам было приятно сказать: « Да! Это именно то,
-            что действительно достойно моего дома!»
-          </p>
+        <div class="container container--small">
+          <h2 class="section__heading">О нас</h2>
+          <div class="about__wrapper clearfix">
+            <img
+              class="about__image float-left"
+              src="./images/content/photo-egg.jpg"
+              alt="Дизайнерски оформленный стол с золотыми приборами, раскошными бокалами, вазой из слоновой кости- формы яйца с цветами в центре"
+              width="444.54"
+              height="465"
+            />
+            <p class="about__text">
+              Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать
+              неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то, что
+              по-настоящему вдохновляет дизайнеров нашей студии.
+            </p>
+            <p class="about__text">
+              Наш коллектив сделает все, чтобы после сотрудничества с нами, Вам было приятно сказать:<br />
+              « Да! Это именно то, что действительно достойно моего дома!»
+            </p>
+          </div>
         </div>
-        <dl class="about__statistic statistic">
-          <div class="statistic__item">
-            <dt class="statistic__term">5</dt>
-            <dd class="statistic__definition">лет опыта</dd>
-          </div>
-          <div class="statistic__item">
-            <dt class="statistic__term">100</dt>
-            <dd class="statistic__definition">проектов</dd>
-          </div>
-          <div class="statistic__item">
-            <dt class="statistic__term">10</dt>
-            <dd class="statistic__definition">наград</dd>
-          </div>
-        </dl>
+        <section class="brown-colored">
+          <dl class="about__statistic statistic container container--small">
+            <div class="statistic__item">
+              <dt class="statistic__term">5</dt>
+              <dd class="statistic__definition">лет опыта</dd>
+            </div>
+            <div class="statistic__item">
+              <dt class="statistic__term">100</dt>
+              <dd class="statistic__definition">проектов</dd>
+            </div>
+            <div class="statistic__item">
+              <dt class="statistic__term">10</dt>
+              <dd class="statistic__definition">наград</dd>
+            </div>
+          </dl>
+        </section>
       </section>
       <section class="section gallery">
         <div class="container gallery__wrapper">

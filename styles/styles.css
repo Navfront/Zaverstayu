@@ -46,10 +46,23 @@
   margin: 0 auto;
 }
 
+.container--small {
+  width: 1034px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .page {
-  font-family: "Montserrat", "Arial", sans-serif;
-  color: var(--color-brown);
+  display: grid;
   position: relative;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 18px;
+  color: var(--color-brown);
+  background-color: var(--color-grey);
 }
 
 .page__header {
@@ -58,6 +71,7 @@
   top: 0;
   right: 0;
   padding: 24px 0;
+  font-size: 16px;
 }
 
 .logo {
@@ -95,4 +109,110 @@
   align-items: center;
   color: var(--color-brown);
   text-decoration: none;
+}
+
+.section {
+  padding: 65px 0;
+}
+
+.section__heading {
+  margin-top: 0;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.section__heading--left {
+  text-align: left;
+}
+
+.brown-colored {
+  background-color: var(--color-light-brown);
+  color: var(--color-white);
+}
+
+.promo {
+  padding-top: 110px;
+  padding-bottom: 169px;
+  background-image: url("../images/background/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.promo__title {
+  width: 530px;
+  font-size: 50px;
+  line-height: 62px;
+  margin-bottom: 20px;
+}
+
+.promo__text {
+  width: 430px;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+
+.button {
+  border: none;
+  cursor: pointer;
+}
+
+.button--request {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 309px;
+  padding: 25px;
+  background-color: var(--color-coral);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.float-left {
+  float: left;
+  margin-right: 62px;
+  margin-bottom: 21px;
+}
+
+.about__text {
+  line-height: 30px;
+}
+
+.about__text + .about__text {
+  margin-top: 30px;
+}
+
+.about__statistic {
+
+}
+
+.statistic {
+  display: flex;
+  justify-content: space-between;
+  padding: 85px 0 81px;
+}
+
+.statistic__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.statistic__term {
+  font-size: 50px;
+  line-height: 62px;
+  margin-bottom: 6px;
+}
+
+.statistic__definition {
+  margin: 0;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  text-transform: uppercase;
 }
