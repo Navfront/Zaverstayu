@@ -1,0 +1,7 @@
+{
+  "extends": "C:/Users/Andrey/AppData/Roaming/nvm/v18.7.0/node_modules/stylelint-config-htmlacademy",
+  "rules": {
+    "declaration-no-important": true,
+    "indentation": [2, {"ignore": ["inside-parens"]}]
+  }
+}
