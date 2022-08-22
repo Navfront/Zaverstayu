@@ -16,6 +16,31 @@
   font-display: swap;
 }
 
+:root {
+  --color-white: #ffffff;
+  --color-grey: #efe6e4;
+  --color-brown: #533738;
+  --color-light-brown: #8d7370;
+  --color-brown-op-80: rgba(100, 72, 69, 0.8);
+  --color-coral: #cc8b86;
+  --color-light-coral: #e2c4ba;
+  --color-light-grey: #f5f2ed;
+  --color-light-grey-2: #f6ede9;
+}
+
 body {
   font-family: "Montserrat", "Arial", sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
