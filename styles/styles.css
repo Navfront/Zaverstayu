@@ -78,9 +78,17 @@
   display: flex;
   align-items: center;
   text-transform: uppercase;
-  text-decoration: none;
-  color: var(--color-brown);
   margin-right: 10px;
+}
+
+.link {
+  color: var(--color-brown);
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  opacity: 0.4;
 }
 
 .navigation {
@@ -101,14 +109,12 @@
 
 .navigation__link {
   color: var(--color-brown);
-  text-decoration: none;
 }
 
 .phone-link {
   display: flex;
   align-items: center;
   color: var(--color-brown);
-  text-decoration: none;
 }
 
 .section {
@@ -120,6 +126,7 @@
   margin-bottom: 40px;
   text-align: center;
   font-size: 40px;
+  font-weight: 400;
   line-height: 50px;
   text-transform: uppercase;
 }
@@ -158,6 +165,11 @@
 .button {
   border: none;
   cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  opacity: 0.8;
 }
 
 .button--request {
@@ -215,4 +227,76 @@
   font-size: 30px;
   line-height: 37px;
   text-transform: uppercase;
+}
+
+.gallery__list {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: 1fr 180px 1fr;
+  gap: 25px 20px;
+  margin-bottom: 37px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.gallery__card:nth-child(4n-2),
+.gallery__card:nth-child(4n-1) {
+  grid-column: span 2;
+}
+
+.gallery__card:nth-child(4n-3) > img,
+.gallery__card:nth-child(4n) > img {
+  width: 488px;
+  height: 451px;
+}
+
+.gallery__card:nth-child(4n-2) > img,
+.gallery__card:nth-child(4n-1) > img {
+  width: 692px;
+  height: 451px;
+}
+
+.card {
+  position: relative;
+}
+
+.card__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 5px;
+  right: 0;
+  padding: 25px 35px 35px;
+  background: linear-gradient(rgba(100, 72, 69, 0.8), rgba(100, 72, 69, 0.8));
+  color: var(--color-white);
+}
+
+.card__title {
+  width: 270px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.card__text {
+  line-height: 30px;
+}
+
+.gallery__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.gallery__link > svg {
+  margin-left: 10px;
 }

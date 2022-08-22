@@ -13,7 +13,7 @@
   <body class="page">
     <header class="page__header">
       <nav class="container navigation">
-        <a class="logo" href="index.html">
+        <a class="logo link" href="index.html">
           <img
             src="./images/logo.png"
             alt="Логотип компании SCANDI. На изображении торшер выполненный черными линиями"
@@ -23,14 +23,14 @@
           <span class="logo__text">scandi</span>
         </a>
         <ul class="navigation__list">
-          <li class="navigation__item"><a class="navigation__link" href="#">О компании</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#">Портфолио</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#">Команда</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#">Как мы работаем</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#">Отзывы клиентов</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#">Оставить заявку</a></li>
+          <li class="navigation__item"><a class="navigation__link link" href="#">О компании</a></li>
+          <li class="navigation__item"><a class="navigation__link link" href="#">Портфолио</a></li>
+          <li class="navigation__item"><a class="navigation__link link" href="#">Команда</a></li>
+          <li class="navigation__item"><a class="navigation__link link" href="#">Как мы работаем</a></li>
+          <li class="navigation__item"><a class="navigation__link link" href="#">Отзывы клиентов</a></li>
+          <li class="navigation__item"><a class="navigation__link link" href="#">Оставить заявку</a></li>
         </ul>
-        <a href="tel:+79818574624" class="phone-link">+7 (981) 857-46-24</a>
+        <a href="tel:+79818574624" class="phone-link link">+7 (981) 857-46-24</a>
       </nav>
     </header>
     <main class="page__main">
@@ -87,31 +87,55 @@
           </dl>
         </section>
       </section>
-      <section class="section gallery">
-        <div class="container gallery__wrapper">
-          <h2 class="section__heading section__heading--left">Наши работы</h2>
-          <ul class="gallery__list">
-            <li class="gallery__card card">
-              <img src="./images/content/gallery/first-job-1" alt="" />
-              <div class="card__wrapper">
-                <h3 class="card__title">Квартира-студия 30 кв.м.</h3>
-                <p class="card__text">
-                  В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали
-                  ребятам уютный интерьер, отсылающий к виллам островов Бали.
-                </p>
-              </div>
-            </li>
-            <li class="gallery__card card"><img src="./images/content/gallery/first-job-2" alt="" /></li>
-            <li class="gallery__card card"><img src="./images/content/gallery/first-job-3" alt="" /></li>
-            <li class="gallery__card card"><img src="./images/content/gallery/first-job-4" alt="" /></li>
-          </ul>
-          <a href="#" class="gallery__link link"
-            >Смотреть ещё
-            <svg width="60" height="20">
-              <use xlink:href="images/sprite.svg#icon-arrow-big"></use>
-            </svg>
-          </a>
-        </div>
+      <section class="section gallery container">
+        <h2 class="section__heading section__heading--left">Наши работы</h2>
+        <ul class="gallery__list">
+          <li class="gallery__card card">
+            <img
+              src="./images/content/gallery/first-job-1.jpg"
+              alt="Комната деревенского стиля с деревянным полом, кроватью, плетеными корзинками"
+              width="488"
+              height="451"
+            />
+            <div class="card__wrapper">
+              <h3 class="card__title">Квартира-студия 30 кв.м.</h3>
+              <p class="card__text">
+                В квартире были светлые стены и тёплые цвета. Мы сконцентрировались <br />
+                на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.
+              </p>
+            </div>
+          </li>
+          <li class="gallery__card card">
+            <img
+              src="./images/content/gallery/first-job-2.jpg"
+              alt="Светлая и уютная кухня в деревянно-каменном стиле"
+              width="692"
+              height="451"
+            />
+          </li>
+          <li class="gallery__card card">
+            <img
+              src="./images/content/gallery/first-job-3.jpg"
+              alt="Уютная комната с диваном, растениями и книжками"
+              width="692"
+              height="451"
+            />
+          </li>
+          <li class="gallery__card card">
+            <img
+              src="./images/content/gallery/first-job-4.jpg"
+              alt="Дизайнерский санузел с ванной в виде керамической чаши и полами из гладких речных булыжников"
+              width="488"
+              height="451"
+            />
+          </li>
+        </ul>
+        <a href="#" class="gallery__link link"
+          >Смотреть ещё
+          <svg width="60" height="20">
+            <use xlink:href="images/sprite.svg#icon-arrow-big"></use>
+          </svg>
+        </a>
       </section>
       <section class="section team">
         <div class="container">
@@ -244,7 +268,7 @@
     </main>
     <footer class="page__footer footer">
       <div class="container footer__wrapper">
-        <a href="tel:+79818574624" class="phone-link">+7 (981) 857-46-24</a>
+        <a href="tel:+79818574624" class="phone-link link">+7 (981) 857-46-24</a>
         <span class="footer__address">г. Санкт-петербург, ул. Большая Конюшенная, 19</span>
         <span class="footer__businessman">ИП Королёва А.А.</span>
       </div>
