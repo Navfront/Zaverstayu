@@ -28,10 +28,6 @@
   --color-light-grey-2: #f6ede9;
 }
 
-body {
-  font-family: "Montserrat", "Arial", sans-serif;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -43,4 +39,60 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.page {
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: var(--color-brown);
+  position: relative;
+}
+
+.page__header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding: 24px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-brown);
+  margin-right: 10px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation__list {
+  display: flex;
+  width: 842px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.navigation__item:not(:last-of-type) {
+  margin-right: 29px;
+}
+
+.navigation__link {
+  color: var(--color-brown);
+  text-decoration: none;
+}
+
+.phone-link {
+  display: flex;
+  align-items: center;
+  color: var(--color-brown);
+  text-decoration: none;
 }
