@@ -380,3 +380,71 @@
   text-align: center;
   line-height: 30px;
 }
+
+.lazy-eye {
+  margin-left: 19px;
+}
+
+.review__wrapper {
+  display: block;
+  position: relative;
+}
+
+.review__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  background-color: var(--color-coral);
+  border: none;
+  border-radius: 50%;
+  color: var(--color-white);
+}
+
+.review__button--left {
+  left: 0;
+  top: 50%;
+  transform: translate(0, -51px);
+}
+
+.review__button--right {
+  right: 0;
+  top: 50%;
+  transform: scaleX(-1) translate(0, -51px);
+}
+
+.review__figure {
+  display: flex;
+  width: 834px;
+  margin: 0 auto;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.review__left-column,
+.review__right-column {
+  width: 407px;
+}
+
+.review__left-column {
+  padding: 72px 0 30px;
+}
+
+.review__left-column p {
+  margin-bottom: 30px;
+}
+
+.review__quote {
+  margin: 0;
+  line-height: 30px;
+}
+
+.review__caption {
+
+}
+
+.review__image:not(:last-of-type) {
+  margin-bottom: 18px;
+}
