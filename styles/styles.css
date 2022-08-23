@@ -395,10 +395,6 @@
   margin-left: 19px;
 }
 
-.review {
-  padding: 65px 0 57px;
-}
-
 .review__wrapper {
   display: block;
   position: relative;
@@ -426,13 +422,13 @@
 .review__button--left {
   left: 0;
   top: 50%;
-  transform: translate(0, -53px);
+  transform: translate(0, -48px);
 }
 
 .review__button--right {
   right: 0;
   top: 50%;
-  transform: scaleX(-1) translate(0, -53px);
+  transform: scaleX(-1) translate(0, -48px);
 }
 
 .review__figure {
@@ -473,7 +469,7 @@
 }
 
 .review__image:not(:last-of-type) {
-  margin-bottom: 13px;
+  margin-bottom: 24px;
 }
 
 .feedback {
