@@ -336,17 +336,13 @@
   padding: 0;
 }
 
-.worker__photo-placeholder {
+.worker__photo {
+  display: block;
   background-color: var(--color-advanced-background);
   width: 320px;
   height: 258px;
+  object-fit: cover;
   margin-bottom: 5px;
-}
-
-.worker__photo {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
 }
 
 .worker__container {
@@ -419,6 +415,12 @@
   border: none;
   border-radius: 50%;
   color: var(--color-white);
+  cursor: pointer;
+}
+
+.review__button:hover,
+.review__button:focus {
+  opacity: 0.7;
 }
 
 .review__button--left {
@@ -460,6 +462,14 @@
 
 .review__quote {
   margin: 0;
+}
+
+.review__image {
+  display: block;
+  width: 407px;
+  height: 272px;
+  background-color: var(--color-advanced-placeholder);
+  object-fit: cover;
 }
 
 .review__image:not(:last-of-type) {
