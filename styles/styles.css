@@ -26,6 +26,8 @@
   --color-light-coral: #e2c4ba;
   --color-light-grey: #f5f2ed;
   --color-light-grey-2: #f6ede9;
+  --color-advanced-background: #ddd7cd;
+  --color-advanced-placeholder: #a99d93;
 }
 
 .visually-hidden {
@@ -149,6 +151,7 @@
   padding-top: 110px;
   padding-bottom: 169px;
   background-image: url("../images/background/background.jpg");
+  background-color: var(--color-advanced-background);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -202,6 +205,13 @@
   margin-top: 30px;
 }
 
+.about__image {
+  object-fit: cover;
+  width: 444.54px;
+  height: 465px;
+  background-color: var(--color-advanced-placeholder);
+}
+
 .statistic {
   display: flex;
   justify-content: space-between;
@@ -233,26 +243,32 @@
   display: grid;
   grid-auto-flow: dense;
   grid-template-columns: 1fr 180px 1fr;
-  gap: 25px 20px;
-  margin-bottom: 29px;
+  gap: 30px 20px;
+  margin-bottom: 40px;
   padding-left: 0;
   list-style: none;
+}
+
+.gallery__card {
+  background-color: var(--color-advanced-placeholder);
+}
+
+.gallery__card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .gallery__card:nth-child(4n-2),
 .gallery__card:nth-child(4n-1) {
   grid-column: span 2;
-}
-
-.gallery__card:nth-child(4n-3) > img,
-.gallery__card:nth-child(4n) > img {
-  width: 488px;
+  width: 692px;
   height: 451px;
 }
 
-.gallery__card:nth-child(4n-2) > img,
-.gallery__card:nth-child(4n-1) > img {
-  width: 692px;
+.gallery__card:nth-child(4n-3),
+.gallery__card:nth-child(4n) {
+  width: 488px;
   height: 451px;
 }
 
@@ -267,7 +283,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  bottom: 5px;
+  bottom: 0;
   right: 0;
   padding: 18px 35px 35px;
   background: linear-gradient(rgba(100, 72, 69, 0.8), rgba(100, 72, 69, 0.8));
@@ -320,10 +336,16 @@
   padding: 0;
 }
 
-.worker__photo {
+.worker__photo-placeholder {
+  background-color: var(--color-advanced-background);
   width: 320px;
-  height: 249px;
+  height: 258px;
   margin-bottom: 5px;
+}
+
+.worker__photo {
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
@@ -378,7 +400,7 @@
 }
 
 .review {
-  padding: 65px 0 55px;
+  padding: 65px 0 57px;
 }
 
 .review__wrapper {
@@ -496,6 +518,7 @@
   width: 590px;
   height: 100%;
   object-fit: cover;
+  background-color: var(--color-advanced-background);
 }
 
 .footer {
