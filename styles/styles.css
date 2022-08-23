@@ -347,12 +347,12 @@
 
 .work-list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
   list-style: none;
   counter-reset: work-item;
+  gap: 20px;
 }
 
 .work-list__item {
@@ -371,6 +371,7 @@
   content: counter(work-item);
   counter-increment: work-item;
   background-color: var(--color-light-brown);
+  color: var(--color-white);
   border-radius: 50%;
   font-weight: 500;
   font-size: 30px;
@@ -383,6 +384,10 @@
 
 .lazy-eye {
   margin-left: 19px;
+}
+
+.review {
+  padding: 65px 0 60px;
 }
 
 .review__wrapper {
@@ -441,10 +446,61 @@
   line-height: 30px;
 }
 
-.review__caption {
-
-}
-
 .review__image:not(:last-of-type) {
   margin-bottom: 18px;
+}
+
+.feedback {
+  padding: 0;
+}
+
+.feedback__wrapper {
+  display: grid;
+  grid-template-columns: auto 590px;
+}
+
+.feedback__form {
+  justify-self: end;
+  width: 508px;
+  padding-right: 20px;
+}
+
+.feedback__title {
+  margin: 50px 0 20px;
+  text-align: left;
+}
+
+.feedback__tip {
+  line-height: 30px;
+  margin-bottom: 37px;
+  opacity: 0.6;
+}
+
+.feedback__input {
+  display: block;
+  width: 100%;
+  margin-bottom: 31px;
+  padding: 12px 0;
+  background-color: transparent;
+  color: var(--color-white);
+  border: none;
+  border-bottom: 1px solid var(--color-white);
+}
+
+.feedback__input:not(:last-of-type) {
+  margin-bottom: 24px;
+}
+
+.feedback__input::placeholder {
+  color: var(--color-light-grey-2);
+}
+
+.feedback__button {
+  margin-bottom: 50px;
+}
+
+.feedback__map {
+  width: 590px;
+  height: 100%;
+  object-fit: cover;
 }

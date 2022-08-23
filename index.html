@@ -266,19 +266,22 @@
           </div>
         </div>
       </section>
-      <section class="section feedback">
+      <section class="section feedback brown-colored">
         <div class="container feedback__wrapper">
           <form action="#" method="post" class="feedback__form">
-            <h2 class="feedback__title">Оставить заявку</h2>
+            <h2 class="feedback__title section__heading">Оставить заявку</h2>
             <p class="feedback__tip">
-              Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.
+              Оставьте свои контакты. Менеджер перезвонит <br />
+              в удобное вам время и ответит на все вопросы.
             </p>
-            <label for="feedback-username">Введите имя</label>
-            <input id="feedback-username" type="text" name="username" placeholder="Ваше имя" />
-            <label for="feedback-tel" class="visually-hidden">Введите телефон</label>
-            <input id="feedback-tel" type="tel" name="tel" placeholder="Введите телефон" />
+            <label class="visually-hidden" for="feedback-username">Введите имя</label>
+            <input class="feedback__input" id="feedback-username" type="text" name="username" placeholder="Ваше имя" />
+            <label class="visually-hidden" for="feedback-tel">Введите телефон</label>
+            <input class="feedback__input" id="feedback-tel" type="tel" name="tel" placeholder="Введите телефон" />
+            <button class="feedback__button button button--request" type="submit">Оставить заявку</button>
           </form>
           <img
+            class="feedback__map"
             src="./images/map.jpg"
             alt="Карта с адресом. Санкт-Петербург. Улица Большая Конюшенная. Дом 19 "
             width="590"
